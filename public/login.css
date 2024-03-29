@@ -1,0 +1,233 @@
+    
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --accent-clr: #4A2E6F;
+
+    --fw-normal: 400;
+    --fw-medium: 600;
+    --fw-bold: 900;
+}
+
+.__header-nav{
+    padding: .5rem;
+    /* border: 2px solid black; */
+}
+
+.__header-inner-items {
+    display: flex;
+    margin-left: 75px;
+    margin-right: 75px;
+    /* border: 2px solid red; */
+}
+
+.item-flex{
+    display: flex;
+    gap: 2rem;
+}
+
+.__logo-image {
+    width: 50px;
+    height: 50px;
+}
+
+.__logo-title p{
+    color: var(--accent-clr);
+    font-weight: var(--fw-bold);
+    font-size: 23px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.navigation {
+    margin-left: auto;
+}
+
+.__navigation-list {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.__navigation-list li{
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight: var(--fw-medium);
+    cursor: pointer;
+}
+
+.__navigation-item-container:hover {
+    color: var(--accent-clr);
+    border-bottom: 2px solid var(--accent-clr); 
+}
+
+/* Form Container */
+.__section-login-container {
+    position: relative;
+}
+
+.__section-login-image img {
+    width: 100%;
+    height:550px;
+    object-fit: cover;
+}
+
+.__section-login-form-container {
+    position: absolute;
+    top: 50px;
+    right: 100px;
+    padding: 1.5rem;
+    width: 350px;
+    height: fit-content;
+    background-color: white;
+}
+
+.__section-login-form-container h1 {
+    font-size: 20px;
+    margin: 20px 0px 0PX 0px;
+    color: var(--accent-clr);
+}
+
+.__section-login-form .input-box{
+    width: 100%;
+    height: 40px;  
+    margin: 15px 0px 15px 0px;  
+    /* border: 2px solid rgb(35, 38, 128);  */
+}
+
+.input-box input {
+    font-size: 15px;
+    width: 100%;
+    height: 100%;
+    /* border-color: rgba(193, 193, 193, 0.8); */
+    /* border: none; */
+    /* outline: 0 none;   */
+    border-radius: 5px;
+    padding: 15px 29px 17px 18px;
+}
+
+.submit input{
+    background-color: var(--accent-clr);
+    color: white;
+    outline: 0 none;
+    cursor: pointer;    
+}
+
+.submit input:hover {
+    background-color: #5a3886;
+}
+
+.__section-login-form .forgetpwd-text{
+    margin-left: 12rem;
+    color: rgb(216, 75, 75);
+    font-size: 15px;
+    font-weight: var(--fw-normal);
+    cursor: pointer;
+}
+
+.__section-login-form .forgetpwd-text:hover {
+    font-weight: var(--fw-medium);
+}
+
+.__section-login-form .Signup-text{
+    margin-left: 2rem;
+    font-size: 17px;    
+    font-weight: var(--fw-normal);
+}
+
+.Signup-text span {
+    margin-left: 10px;
+    color: #4162A7;
+    cursor: pointer;
+}
+
+.Signup-text span:hover {
+   font-weight: var(--fw-medium);
+}
+
+.__section-login-form-container .line {
+    position: relative;
+    width: 100%;
+    height: 2px;
+    margin: 15px 0px 15px 0px;
+    background-color: black;
+}
+
+.__section-login-form-container .OR {
+    position: absolute;
+    left: 115px;
+    top: -10px;
+    width: fit-content;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: white;
+    text-align: center;
+}
+
+.other-account {
+    position: relative;
+}
+
+.other-account-btn {
+    font-size: 18px;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+    margin: 10px 0px 0px 0px;
+    /* border: 2px solid red; */
+}
+
+.facebook {
+    background-color: #4162A7;
+}
+
+.facebook:hover {
+    background-color: #4d71c0;
+}
+
+.google {
+    background-color: #b03d29;
+}
+
+.google:hover {
+    background-color: #c2442e;
+}
+
+.google p{
+    color: WHITE;
+}
+
+.other-account-btn a  {
+    text-decoration: none;
+    color: white;
+}
+
+.other-account-btn a p{
+    margin-left: 60px;
+}
+
+.other-account .boxicon {
+    position: absolute;
+    text-align: end;
+    top: 3px;
+    left: 20px;
+    width: 34px;
+    height: 32px;
+    border-radius: 50px;
+    background-color: white;
+}
+
+.other-account .bx {
+    position: absolute;
+    left: -5px;
+    top: -5px;
+    z-index: 1;
+    font-size: 45px;
+    cursor: pointer;
+}
